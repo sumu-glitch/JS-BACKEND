@@ -1,0 +1,15 @@
+{
+  "name": "javascript-backend",
+  "version": "1.0.0",
+  "description": "js backend practic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "js",
+    "backend"
+  ],
+  "author": "Gaurav Parwate",
+  "license": "ISC"
+}
