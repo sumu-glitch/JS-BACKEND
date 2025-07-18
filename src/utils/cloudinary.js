@@ -27,7 +27,7 @@ import fs from "fs"
         
      }
 
-export {uploadFileCloudinary}
+export default {uploadFileCloudinary}
 
 
 //impoved version by chatgpt

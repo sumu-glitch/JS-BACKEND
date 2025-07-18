@@ -53,7 +53,7 @@ const userSchema = new Schema(
 //yaha pe hamara password ko incript karane ka logic hai
 userSchema.pre('save', async function (next) {
     if (!this.isModified("password")) return next() //agr password incript nhi hua hai to direct next pe jao
-    this.password = bcrypt.hash(this.password,10) //agr password change hua hai to use hash me change karo
+    this.password = await bcrypt.hash(this.password,10) //agr password change hua hai to use hash me change karo
     next()
 })
 

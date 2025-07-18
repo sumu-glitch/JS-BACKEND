@@ -1,21 +1,12 @@
 //ye ( promices ) vala hai
 
 const asyncHandler = (func) => {
-    (req,res,next)=>{
-    Promise
-    .resolve(func(req,res,next))
-    .catch((err)=>{
-    })
-}
-}
+  return (req, res, next) => {
+    Promise.resolve(func(req, res, next)).catch((err) => {});
+  };
+};
 
-
-
-
-
-export {asyncHandler}
-
-
+export { asyncHandler };
 
 //ye (async-await) try-catch block vala hai
 /*
